@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Solicitud de Ingreso-Revisión Propuesta USAID</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div id="main-container">
+        <img src="" alt="Logo_Universidad" width="200" height="200"/>
+        <div id="titulo-principal">UNIVERSIDAD TECNOLÓGICA DE SANTIAGO-UTESA</div>
+        <div id="subtitulo-principal">SISTEMA CORPORATIVO</div>
+        <div id="titulo-departamento">Departamento de Admisiones</div>
+        <div id="titulo-documento">SOLICITUD DE INGRESO</div>
+        <form id="main-form">
+
+        <!--INFORMACION PRINCIPAL-->
+
+            <div id="form-foto">
+                <input name="foto" type="image" width="200px" height="200px"/>
+            </div>
+            <div id="form-inicio">
+
+                <label for="matricula">Matrícula</label>
+                    <input name="matricula" type="text"/>
+
+                <label for="pensum-inicio1">Pensum Inicio:</label>
+                    <input name="pensum-inicio1" type="number"/>
+                    <label class="hidden" for="pensum-inicio2"></label>
+                    <input name="pensum-inicio2" type="number"/>
+                    <label class="hidden" for="pensum-inicio3"></label>
+                    <input name="pensum-inicio3" type="number"/>
+                    <label class="hidden" for="pensum-inicio4"></label>
+                    <input name="pensum-inicio4" type="number"/>
+                    <label class="hidden" for="pensum-inicio5"></label>
+                    <input name="pensum-inicio5" type="number"/><br/>
+
+                <span>(No escriba aquí)</span>
+                <span>(No escriba aquí)</span>
+
+            </div>
+        
+        <!--1-DATOS GENERALES-->
+
+            <span>1-DATOS GENERALES:</span>
+            <div id="form-datos-generales">
+
+                <label for="nombres">Nombres:</label>
+                    <input name="nombres" type="text"/><br/>
+
+                <label for="apellidos">Apellidos:</label>
+                    <input name="apellidos" type="text"/><br/>
+
+                <label for="direccion">Dirección:</label>
+                    <input name="direccion" type="text"/>
+                <label for="municipio">Municipio:</label>
+                    <input name="municipio" type="text"/><br/>
+
+                <label for="pais">País:</label>
+                    <input name="pais" type="text"/>
+                <label for="nacionalidad">Nacionalidad:</label>
+                    <input name="nacionalidad" type="text"/><br/>
+
+                <label for="status-migratorio-estudiante">Status Migratorio: Visa Estudiante</label>
+                    <input id="status-migratorio-estudiante" name="status-migratorio" type="radio" checked/>
+                <label for="status-migratorio-residencia">Residencia</label>
+                    <input id="status-migratorio-residencia" name="status-migratorio" type="radio"/>
+                <label for="status-migratorio-regularizacion">Carnet de Regularización</label>
+                    <input id="status-migratorio-regularizacion" name="status-migratorio" type="radio"/><br/>
+
+                <label for="telefonos1">Teléfonos:</label>
+                    <input name="telefonos1" type="number"/>
+                    <label class="hidden" for="telefonos2"></label>
+                    <input name="telefonos2" type="number"/>
+                    <label class="hidden" for="telefonos3"></label>
+                    <input name="telefonos3" type="number"/><br/>
+
+                    <span>(Residencia)</span>
+                    <span>(Celular)</span>
+                    <span>(Trabajo)</span><br/>
+                
+                <label for="facebook">Facebook:</label>
+                    <input name="facebook" type="text"/>
+                <label for="instagram">Instagram:</label>
+                    <input name="instagram" type="text"/>
+                <label for="twitter">Twitter:</label>
+                    <input name="twitter" type="text"/><br/>
+
+                <span>(Copiar enlace)</span>
+                <span>(Usuario)</span>
+                <span>(Usuario)</span><br/>
+
+                <label for="correo">Correo electrónico:</label>
+                    <input name="correo" type="text"/><br/>
+                
+                <label for="genero">Género: (F/M)</label>
+                    <select id="cars" name="cars">
+                        <option value="femenino" selected>F</option>
+                        <option value="masculino">M</option>
+                    </select>
+                
+                <label for="edad1">Edad:</label>
+                    <input name="edad1" type="number"/>
+                    <label class="hidden" for="edad2"></label>
+                    <input name="edad2" type="number"/>
+
+                <label for="estado-civil-soltero">Estado Civil: Soltero(a)</label>
+                    <input id="estado-civil-soltero" name="estado-civil" type="radio" checked/>
+                <label for="estado-civil-casado">Casado(a)</label>
+                    <input id="estado-civil-casado" name="estado-civil" type="radio"/>
+
+                <label for="hijos-si">¿Tienes hijos? Sí</label>
+                    <input id="hijos-si" name="hijos" type="radio" checked/>
+                <label for="hijos-no">Casado(a)</label>
+                    <input id="hijos-no" name="hijos" type="radio"/><br/>
+                <label for="hijos-embarazada">No, pero estoy embarazada/mi pareja esta embarazada</label>
+                    <input id="hijos-embarazada" name="hijos" type="radio"/>
+                
+                <label for="hijos-cantidad1">De tener hijos, ¿cúantos tiene?</label>
+                    <input name="hijos-cantidad1" type="number"/>
+                    <label class="hidden" for="hijos-cantidad2"></label>
+                    <input name="hijos-cantidad2" type="number"/><br/>
+
+                <label for="ciudad-nacimiento">Ciudad de Nacimiento:</label>
+                    <input name="ciudad-nacimiento" type="text"/>
+
+                <label for="fecha-nacimiento-dia1">Fecha de Nacimiento:</label>
+                    <input name="fecha-nacimiento-dia1" type="number"/>
+                    <label class="hidden" for="fecha-nacimiento-dia2"></label>
+                    <input name="fecha-nacimiento-dia2" type="number"/>
+
+                    <label class="hidden" for="fecha-nacimiento-mes1"></label>
+                    <input name="fecha-nacimiento-mes1" type="number"/>
+                    <label class="hidden" for="fecha-nacimiento-mes2"></label>
+                    <input name="fecha-nacimiento-mes2" type="number"/>
+
+                    <label class="hidden" for="fecha-nacimiento-ano1"></label>
+                    <input name="fecha-nacimiento-ano1" type="number"/>
+                    <label class="hidden" for="fecha-nacimiento-ano2"></label>
+                    <input name="fecha-nacimiento-ano2" type="number"/><br/>
+
+                <span>(Día)</span>
+                <span>(Mes)</span>
+                <span>(Año)</span>
+
+                <label for="cedula-pasaporte">Cédula / Pasaporte:</label>
+                    <input name="cedula-pasaporte" type="number"/>
+                <label for="carrera">Carrera:</label>
+                    <input name="carrera" type="text"/><br/>
+
+                <label for="grupo-etnico-europeo">Grupo Étnico: Europeo</label>
+                    <input id="grupo-etnico-europeo" name="grupo-etnico" type="radio" checked/>
+                    <label for="grupo-etnico-africano">Africano</label>
+                    <input id="grupo-etnico-africano" name="grupo-etnico" type="radio"/>
+                    <label for="grupo-etnico-asiatico">Asiático</label>
+                    <input id="grupo-etnico-asiatico" name="grupo-etnico" type="radio"/>
+                    <label for="grupo-etnico-norteamericano">Norteamericano</label>
+                    <input id="grupo-etnico-norteamericano" name="grupo-etnico" type="radio"/>
+                    <label for="grupo-etnico-latinoamericano">Latinoamericano</label>
+                    <input id="grupo-etnico-latinoamericano" name="grupo-etnico" type="radio"/><br/>
+
+                <label for="preferencia-sexual-heterosexual">¿Cuál es tu preferencia sexual? Heterosexual</label>
+                    <input id="preferencia-sexual-heterosexual" name="preferencia-sexual" type="radio" checked/>
+                    <label for="preferencia-sexual-homosexual">Homosexual</label>
+                    <input id="preferencia-sexual-homosexual" name="preferencia-sexual" type="radio"/>
+                    <label for="preferencia-sexual-otra">Otra</label>
+                    <input id="preferencia-sexual-otra" name="preferencia-sexual" type="radio"/>
+                    <label for="preferencia-sexual-noresponder">Prefiero no responder</label>
+                    <input id="preferencia-sexual-noresponder" name="preferencia-sexual" type="radio"/><br/>
+
+                <label for="fumas-si">¿Fumas? Sí</label>
+                    <input id="fumas-si" name="fumas" type="radio" checked/>
+                    <label for="fumas-no">No</label>
+                    <input id="fumas-no" name="fumas" type="radio"/>
+                    <label for="fumas-noresponder">Prefiero no responder</label>
+                    <input id="fumas-noresponder" name="fumas" type="radio"/><br/>
+
+            </div>
+
+        <!--2-DATOS ACADÉMICOS:-->
+
+            <span>2-DATOS ACADÉMICOS:</span>
+            <div id="form-datos-academicos">
+                
+                <label for="nivel-tecnico">Nivel: Técnico</label>
+                    <input id="nivel-tecnico" name="nivel" type="radio" checked/>
+                    <label for="nivel-profesional">Profesional</label>
+                    <input id="nivel-profesional" name="nivel" type="radio"/>
+
+                <label for="ingreso-nuevo">Tipo de Ingreso: Nuevo</label>
+                    <input id="ingreso-nuevo" name="ingreso" type="radio" checked/>
+                    <label for="ingreso-transferido">Transferido</label>
+                    <input id="ingreso-transferido" name="ingreso" type="radio"/><br/>
+
+                <label for="universidad-procedencia">Si es Transferido, Universidad de Procedencia:</label>
+                    <input name="universidad-procedencia" type="text"/><br/>
+
+                <label for="horario-preferencia-mañana">Horarios de Preferencia: Mañana</label>
+                    <input id="horario-preferencia-mañana" name="horario-preferencia" type="radio" checked/>
+                    <label for="horario-preferencia-tarde">Tarde</label>
+                    <input id="horario-preferencia-tarde" name="horario-preferencia" type="radio"/>
+                    <label for="horario-preferencia-noche">Noche</label>
+                    <input id="horario-preferencia-noche" name="horario-preferencia" type="radio"/>
+                    <label for="horario-preferencia-sabatino">Sabatino</label>
+                    <input id="horario-preferencia-sabatino" name="horario-preferencia" type="radio"/><br/>
+
+                <label for="bachillerato-centro-privado">Cursó Bachillerato en Centro Educativo: Privado</label>
+                    <input id="bachillerato-centro-privado" name="bachillerato-centro" type="radio" checked/>
+                    <label for="bachillerato-centro-publico">Público</label>
+                    <input id="bachillerato-centro-publico" name="bachillerato-centro" type="radio"/>
+
+                <label for="zona-urbana">Zona: Urbana</label>
+                    <input id="zona-urbana" name="zona" type="radio" checked/>
+                    <label for="zona-rural">Rural</label>
+                    <input id="zona-rural" name="zona" type="radio"/><br/>
+
+                <label for="centro-nombre">Nombre del Centro:</label>
+                    <input name="centro-nombre" type="text"/><br/>
+
+                <label for="horario-bachillerato-mañana">Horario en que cursó Bachillerato: Mañana</label>
+                    <input id="horario-bachillerato-mañana" name="horario-bachillerato" type="radio" checked/>
+                    <label for="horario-bachillerato-tarde">Tarde</label>
+                    <input id="horario-bachillerato-tarde" name="horario-bachillerato" type="radio"/>
+                    <label for="horario-bachillerato-noche">Noche</label>
+                    <input id="horario-bachillerato-noche" name="horario-bachillerato" type="radio"/>
+                    <label for="horario-bachillerato-sabatino">Sabatino</label>
+                    <input id="horario-bachillerato-sabatino" name="horario-bachillerato" type="radio"/>
+                    <label for="horario-bachillerato-dominical">Dominical</label>
+                    <input id="horario-bachillerato-dominical" name="horario-bachillerato" type="radio"/><br/>
+
+                <label for="graduacion">Año de Graduación:</label>
+                    <input name="graduacion" type="text"/>
+                <label for="provincia">Provincia:</label>
+                    <input name="provincia" type="text"/>
+                <label for="municipio">Municipio:</label>
+                    <input name="municipio" type="text"/><br/>
+            </div>
+        
+        <!--3-DATOS OCUPACIONALES:-->
+
+            <span>3-DATOS OCUPACIONALES:</span>
+            <div id="form-datos-ocupacionales">
+
+                <label for="empleado-si">¿Está Empleado? Sí</label>
+                    <input id="empleado-si" name="empleado" type="radio" checked/>
+                    <label for="empleado-no">No</label>
+                    <input id="empleado-no" name="empleado" type="radio"/>
+
+                <label for="cargo">Cargo que ocupa:</label>
+                    <input name="cargo" type="text"/><br/>
+
+                <label for="cargo-empresa">Nombre de la Empresa o Institución:</label>
+                    <input name="cargo-empresa" type="text"/><br/>
+
+                <label for="direccion-empresa">Dirección:</label>
+                    <input name="direccion-empresa" type="text"/><br/>
+                
+                <span>Tu vivienda recibe aproximadamente ingresos mensuales de…</span>
+                    <label for="ingresos1">0 a 11 mil pesos</label>
+                    <input id="ingresos1" name="ingresos" type="radio" checked/>
+                    <label for="ingresos2">11 mil a 21 mil pesos</label>
+                    <input id="ingresos2" name="ingresos" type="radio"/>
+                    <label for="ingresos3">21mil a 30 mil pesos</label>
+                    <input id="ingresos3" name="ingresos" type="radio"/>
+                    <label for="ingresos4">30 mil a 41 mil pesos</label>
+                    <input id="ingresos4" name="ingresos" type="radio"/><br/>
+                    <label for="ingresos5">Prefiero no responder</label>
+                    <input id="ingresos5" name="ingresos" type="radio"/><br/>
+
+                <label for="horas-trabajo">¿Cuántas horas trabaja a la semana?</label>
+                    <input name="horas-trabajo" type="text"/><br/>
+
+            </div>
+
+        <!--4-DATOS DEL TUTOR (A)-->
+
+            <span>4-DATOS DEL TUTOR (A)</span>
+            <div id="form-datos-tutor">
+
+                <label for="nombre-tutor">Nombre de la Madre, Padre o Tutor:</label>
+                    <input name="nombre-tutor" type="text"/><br/>
+
+                <label for="ocupacion-tutor">Ocupación:</label>
+                    <input name="ocupacion-tutor" type="text"/><br/>
+
+                <label for="estudio-padre-noestudio">¿Qué nivel de estudió completó tu padre o tutor? No asistió a la escuela</label>
+                    <input id="estudio-padre-noestudio" name="estudio-padre" type="radio" checked/>
+                    <label for="estudio-padre-primaria">Primaria</label>
+                    <input id="estudio-padre-primaria" name="estudio-padre" type="radio"/>
+                    <label for="estudio-padre-secundaria">Secundaria</label>
+                    <input id="estudio-padre-secundaria" name="estudio-padre" type="radio"/><br/>
+                    <label for="estudio-padre-universidad">Universidad/Postgrado</label>
+                    <input id="estudio-padre-universidad" name="estudio-padre" type="radio"/>
+                    <label for="estudio-padre-noresponder">Prefiero no responder</label>
+                    <input id="estudio-padre-noresponder" name="estudio-padre" type="radio"/><br/>
+
+                <label for="estudio-madre-noestudio">¿Qué nivel de estudió completó tu madre o tutor? No asistió a la escuela</label>
+                    <input id="estudio-madre-noestudio" name="estudio-madre" type="radio" checked/>
+                    <label for="estudio-madre-primaria">Primaria</label>
+                    <input id="estudio-madre-primaria" name="estudio-madre" type="radio"/>
+                    <label for="estudio-madre-secundaria">Secundaria</label>
+                    <input id="estudio-madre-secundaria" name="estudio-madre" type="radio"/><br/>
+                    <label for="estudio-madre-universidad">Universidad/Postgrado</label>
+                    <input id="estudio-madre-universidad" name="estudio-madre" type="radio"/>
+                    <label for="estudio-madre-noresponder">Prefiero no responder</label>
+                    <input id="estudio-madre-noresponder" name="estudio-madre" type="radio"/><br/>
+
+                <label for="estudio-hermano-noestudio">¿Qué nivel de estudió completó tu hermano o hermana mayor? No asistió a la escuela</label>
+                    <input id="estudio-hermano-noestudio" name="estudio-hermano" type="radio" checked/>
+                    <label for="estudio-hermano-primaria">Primaria</label>
+                    <input id="estudio-hermano-primaria" name="estudio-hermano" type="radio"/><br/>
+                    <label for="estudio-hermano-secundaria">Secundaria</label>
+                    <input id="estudio-hermano-secundaria" name="estudio-hermano" type="radio"/>
+                    <label for="estudio-hermano-universidad">Universidad/Postgrado</label>
+                    <input id="estudio-hermano-universidad" name="estudio-hermano" type="radio"/>
+                    <label for="estudio-hermano-noresponder">No aplica</label>
+                    <input id="estudio-hermano-noresponder" name="estudio-hermano" type="radio"/><br/>
+
+                <label for="direccion-familiar">Dirección Familiar Actual:</label>
+                    <input name="direccion-familiar" type="text"/><br/>
+
+                <label for="telefono-familiar">Teléfono:</label>
+                    <input name="telefono-familiar" type="number"/>
+
+                <label for="celular-familiar">Celular:</label>
+                    <input name="celular-familiar" type="number"/><br/>
+
+            </div>
+        
+        <!--5-DATOS DE SALUD:-->
+
+            <span>5-DATOS DE SALUD:</span>
+            <div id="form-datos-salud">
+                
+                <label for="enfermedad-si">¿Padece alguna enfermedad? Sí</label>
+                    <input id="enfermedad-si" name="enfermedad" type="radio" checked/>
+                    <label for="enfermedad-no">No</label>
+                    <input id="enfermedad-no" name="enfermedad" type="radio"/>
+
+                <label for="enfermedad-explique">explique:</label>
+                    <input name="enfermedad-explique" type="text"/><br/>
+
+                <label for="alergias-si">Alergias: Sí</label>
+                    <input id="alergias-si" name="alergias" type="radio" checked/>
+                    <label for="alergias-no">No</label>
+                    <input id="alergias-no" name="alergias" type="radio"/>
+
+                <label for="alergias-explique">explique:</label>
+                    <input name="alergias-explique" type="text"/>
+                    
+                <label for="tipo-sangre">Tipo de Sangre:</label>
+                    <input name="tipo-sangre" type="text"/><br/>
+
+                <label for="medicacion-si">¿Utiliza alguna medicación? Sí</label>
+                    <input id="medicacion-si" name="medicacion" type="radio" checked/>
+                    <label for="medicacion-no">No</label>
+                    <input id="medicacion-no" name="medicacion" type="radio"/>
+
+                <label for="medicacion-explique">explique:</label>
+                    <input name="medicacion-explique" type="text"/><br/>
+
+                <span>¿Has sido diagnosticado por un doctor con síntomas de ansiedad?</span>
+                <p>Síntomas de ansiedad: Físicos (taquicardia, palpitaciones, opresión en el pecho, falta de aire, temblores y psicológicos
+                    inquietud, agobio, sensación de amenaza o peligro, ganas de huir o atacar, inseguridad, estado de alerta, dificultad de
+                    atención, concentración, irritabilidad).</p>
+                    <label for="ansiedad1">Si</label>
+                    <input id="ansiedad1" name="ansiedad" type="radio" checked/>
+                    <label for="ansiedad2">No</label>
+                    <input id="ansiedad2" name="ansiedad" type="radio"/>
+                    <label for="ansiedad3">No he sido diagnosticado formalmente, pero presento algunos síntomas</label>
+                    <input id="ansiedad3" name="ansiedad" type="radio"/><br/>
+                    <label for="ansiedad4">Prefiero no responder</label>
+                    <input id="ansiedad4" name="ansiedad" type="radio"/><br/>
+
+                <span>¿Has sido diagnosticado con síntomas de depresión?</span>
+                <p>Síntomas de depresión: Estado de ánimo irritable o bajo la mayoría de veces, dificultad para conciliar el sueño o exceso
+                    de sueño, cambio grande en el apetito (a menudo con aumento o pérdida de peso), cansancio, falta de energía y culpa.</p>
+                    <label for="depresion1">Si</label>
+                    <input id="depresion1" name="depresion" type="radio" checked/>
+                    <label for="depresion2">No</label>
+                    <input id="depresion2" name="depresion" type="radio"/>
+                    <label for="depresion3">No he sido diagnosticado formalmente, pero presento algunos síntomas</label>
+                    <input id="depresion3" name="depresion" type="radio"/><br/>
+                    <label for="depresion4">Prefiero no responder</label>
+                    <input id="depresion4" name="depresion" type="radio"/><br/>
+
+                <label for="lentes-dificultad0">¿Tienes dificultad para ver, aunque lleves lentes? No, ninguna dificultad</label>
+                    <input id="lentes-dificultad0" name="lentes" type="radio" checked/>
+                    <label for="lentes-dificultad1">Sí, con cierta dificultad</label>
+                    <input id="lentes-dificultad1" name="lentes" type="radio"/><br/>
+                    <label for="lentes-dificultad2">Sí, mucha dificultad</label>
+                    <input id="lentes-dificultad2" name="lentes" type="radio"/>
+                    <label for="lentes-dificultad3">No puedo, para nada</label>
+                    <input id="lentes-dificultad3" name="lentes" type="radio"/><br/>
+
+                <label for="oido-dificultad0">¿Tienes dificultad para oír, aunque utilices auriculares? No, ninguna dificultad</label>
+                    <input id="oido-dificultad0" name="oido" type="radio" checked/>
+                    <label for="oido-dificultad1">Sí, con cierta dificultad</label>
+                    <input id="oido-dificultad1" name="oido" type="radio"/><br/>
+                    <label for="oido-dificultad2">Sí, mucha dificultad</label>
+                    <input id="oido-dificultad2" name="oido" type="radio"/>
+                    <label for="oido-dificultad3">No puedo, para nada</label>
+                    <input id="oido-dificultad3" name="oido" type="radio"/><br/>
+
+                <label for="caminar-dificultad0">¿Tienes dificultades para caminar o subir escalones? No, ninguna dificultad</label>
+                    <input id="caminar-dificultad0" name="caminar" type="radio" checked/>
+                    <label for="caminar-dificultad1">Sí, con cierta dificultad</label>
+                    <input id="caminar-dificultad1" name="caminar" type="radio"/><br/>
+                    <label for="caminar-dificultad2">Sí, mucha dificultad</label>
+                    <input id="caminar-dificultad2" name="caminar" type="radio"/>
+                    <label for="caminar-dificultad3">No puedo, para nada</label>
+                    <input id="caminar-dificultad3" name="caminar" type="radio"/><br/>
+
+                <label for="recordar-dificultad0">¿Tienes dificultades para recordar o concentrarse? No, ninguna dificultad</label>
+                    <input id="recordar-dificultad0" name="recordar" type="radio" checked/>
+                    <label for="recordar-dificultad1">Sí, con cierta dificultad</label>
+                    <input id="recordar-dificultad1" name="recordar" type="radio"/><br/>
+                    <label for="recordar-dificultad2">Sí, mucha dificultad</label>
+                    <input id="recordar-dificultad2" name="recordar" type="radio"/>
+                    <label for="recordar-dificultad3">No puedo, para nada</label>
+                    <input id="recordar-dificultad3" name="recordar" type="radio"/><br/>
+
+                <label for="autocuidado-dificultad0">¿Tienes dificultades con el autocuidado, como bañarte o vestirte de manera independiente? No, ninguna dificultad</label>
+                    <input id="autocuidado-dificultad0" name="autocuidado" type="radio" checked/><br/>
+                    <label for="autocuidado-dificultad1">Sí, con cierta dificultad</label>
+                    <input id="autocuidado-dificultad1" name="autocuidado" type="radio"/>
+                    <label for="autocuidado-dificultad2">Sí, mucha dificultad</label>
+                    <input id="autocuidado-dificultad2" name="autocuidado" type="radio"/>
+                    <label for="autocuidado-dificultad3">No puedo, para nada</label>
+                    <input id="autocuidado-dificultad3" name="autocuidado" type="radio"/><br/>
+
+                <label for="lengua-dificultad0">Utilizando su lengua habitual (de costumbre), ¿Tienes dificultades para comunicarte, por ejemplo, para hacerte
+                    entender? No, ninguna dificultad</label>
+                    <input id="lengua-dificultad0" name="lengua" type="radio" checked/>
+                    <label for="lengua-dificultad1">Sí, con cierta dificultad</label>
+                    <input id="lengua-dificultad1" name="lengua" type="radio"/>
+                    <label for="lengua-dificultad2">Sí, mucha dificultad</label>
+                    <input id="lengua-dificultad2" name="lengua" type="radio"/><br/>
+                    <label for="lengua-dificultad3">No puedo, para nada</label>
+                    <input id="lengua-dificultad3" name="lengua" type="radio"/><br/>
+                
+                <label for="contactoemergencia-nombre">Contacto en caso de emergencias:</label>
+                    <input name="contactoemergencia-nombre" type="text"/>
+
+                <label for="contactoemergencia-telefono">Teléfono:</label>
+                    <input name="contactoemergencia-telefono" type="number"/><br/>
+
+            </div>
+        
+        <!--COMPROMISO ESTUDIANTIL-->
+
+            <label for="fecha-admision-dia1">Fecha de Admisión:</label>
+                <input name="fecha-admision-dia1" type="number"/>
+                <label class="hidden" for="fecha-admision-dia2"></label>
+                <input name="fecha-admision-dia2" type="number"/>
+
+                <label class="hidden" for="fecha-admision-mes1"></label>
+                <input name="fecha-admision-mes1" type="number"/>
+                <label class="hidden" for="fecha-admision-mes2"></label>
+                <input name="fecha-admision-mes2" type="number"/>
+
+                <label class="hidden" for="fecha-admision-ano1"></label>
+                <input name="fecha-admision-ano1" type="number"/>
+                <label class="hidden" for="fecha-admision-ano2"></label>
+                <input name="fecha-admision-ano2" type="number"/>
+                <label class="hidden" for="fecha-admision-ano3"></label>
+                <input name="fecha-admision-ano3" type="number"/>
+                <label class="hidden" for="fecha-admision-ano4"></label>
+                <input name="fecha-admision-ano4" type="number"/>
+
+                <input name="firma-solicitante" type="text"/>
+
+            <span>(Día)</span>
+            <span>(Mes)</span>
+            <span>(Año)</span>
+
+            <span>Firma del Solicitante</span>
+
+            
+            <div id="form-compromiso">
+                <span>COMPROMISO ESTUDIANTIL</span>
+
+                <p>Como estudiante que desea ingresar y permanecer en la Universidad Tecnológica de Santiago (UTESA) me
+                    comprometo a respetar y cumplir fielmente con los Reglamentos y Normas disciplinarias, así como con las
+                    políticas y demás disposiciones establecidas por la Institución, recientes y futuras; de no hacerlo, asumo toda
+                    la responsabilidad de mis acciones y acato las disposiciones que establezcan las autoridades y estamentos
+                    competentes.</p><br/>
+
+                <p>La institución como parte de su formación académica dispone de horarios de lunes a domingo, cada
+                    estudiante debe cumplir con los horarios establecidos.</p><br/>
+
+                <label for="compromiso-nombre">Nombre:</label>
+                    <input name="compromiso-nombre" type="text"/><br/>
+
+                <label for="compromiso-nombre">Carrera:</label>
+                    <input name="compromiso-nombre" type="text"/><br/>
+
+                <label for="compromiso-nombre">Fecha:</label>
+                    <input name="compromiso-nombre" type="date"/><br/>
+
+                <label for="compromiso-nombre">Firma:</label>
+                    <input name="compromiso-nombre" type="text"/><br/>
+
+            </div>
+
+            <span>¿Por qué decide estudiar en la Universidad UTESA?</span>
+                <input id="encuesta1" name="encuesta" type="radio" checked/>
+                <label for="encuesta1">Calidad Académica</label>
+                <input id="encuesta2" name="encuesta" type="radio"/>
+                <label for="encuesta2">Prestigio</label>
+                <input id="encuesta3" name="encuesta" type="radio"/>
+                <label for="encuesta3">Referencia de Profesor o Empleado</label>
+                <input id="encuesta4" name="encuesta" type="radio"/>
+                <label for="encuesta4">Becados</label><br/>
+                <input id="encuesta5" name="encuesta" type="radio"/>
+                <label for="encuesta5">Referencia de Amigos o Familiares</label>
+                <input id="encuesta6" name="encuesta" type="radio"/>
+                <label for="encuesta6">Costo Asequible</label>
+                <input id="encuesta7" name="encuesta" type="radio"/>
+                <label for="encuesta7">Otros, especifique:</label><input id="encuesta7especifique" type="text"/><br/>
+
+                <span>*Después de formalizada la inscripción, todo documento pasa a ser propiedad de la Institución.</span>
+
+                <input id="boton-submit" type="submit">
+        </form>
+    </div>
+</body>
+</html>
