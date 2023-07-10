@@ -8,25 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-    <div id="main-container">
-        <img src="" alt="Logo_Universidad" width="200" height="200"/>
-        <div id="titulo-principal">UNIVERSIDAD TECNOLÓGICA DE SANTIAGO-UTESA</div>
-        <div id="subtitulo-principal">SISTEMA CORPORATIVO</div>
-        <div id="titulo-departamento">Departamento de Admisiones</div>
-        <div id="titulo-documento">SOLICITUD DE INGRESO</div>
+    <div class="main-container" id="main-container">
         <form id="main-form">
+
+            <div id="form-foto">
+                <input name="foto" type="image"/>
+            </div>
+
+            <img id="logo-universidad" src="logo-utesa.png" alt="Logo_Universidad" width="14%"/>
+            <div class="titulo" id="titulo-principal">UNIVERSIDAD TECNOLÓGICA DE SANTIAGO-UTESA</div>
+            <div class="titulo" id="subtitulo-principal">SISTEMA CORPORATIVO</div>
+            <div class="titulo" id="titulo-departamento">Departamento de Admisiones</div>
+            <div class="titulo" id="titulo-documento">SOLICITUD DE INGRESO</div>
+
+            <div class="clearfix"></div>
 
         <!--INFORMACION PRINCIPAL-->
 
-            <div id="form-foto">
-                <input name="foto" type="image" width="200px" height="200px"/>
-            </div>
+            
             <div id="form-inicio">
 
                 <label for="matricula">Matrícula</label>
                     <input name="matricula" type="text"/>
 
-                <label for="pensum-inicio1">Pensum Inicio:</label>
+                <label class="numberfix" id="pensum-inicio1" for="pensum-inicio1">Pensum Inicio:</label>
                     <input name="pensum-inicio1" type="number"/>
                     <label class="hidden" for="pensum-inicio2"></label>
                     <input name="pensum-inicio2" type="number"/>
@@ -37,15 +42,15 @@
                     <label class="hidden" for="pensum-inicio5"></label>
                     <input name="pensum-inicio5" type="number"/><br/>
 
-                <span>(No escriba aquí)</span>
-                <span>(No escriba aquí)</span>
+                <span id="span-matricula">(No escriba aquí)</span>
+                <span id="span-inicio">(No escriba aquí)</span>
 
             </div>
         
         <!--1-DATOS GENERALES-->
 
-            <span>1-DATOS GENERALES:</span>
-            <div id="form-datos-generales">
+            <span class="subtitle">1-DATOS GENERALES:</span>
+            <div class="parrafo" id="form-datos-generales">
 
                 <label for="nombres">Nombres:</label>
                     <input name="nombres" type="text"/><br/>
@@ -70,7 +75,7 @@
                 <label for="status-migratorio-regularizacion">Carnet de Regularización</label>
                     <input id="status-migratorio-regularizacion" name="status-migratorio" type="radio"/><br/>
 
-                <label for="telefonos1">Teléfonos:</label>
+                <label class="numberfix" for="telefonos1">Teléfonos:</label>
                     <input name="telefonos1" type="number"/>
                     <label class="hidden" for="telefonos2"></label>
                     <input name="telefonos2" type="number"/>
@@ -101,7 +106,7 @@
                         <option value="masculino">M</option>
                     </select>
                 
-                <label for="edad1">Edad:</label>
+                <label class="numberfix" for="edad1">Edad:</label>
                     <input name="edad1" type="number"/>
                     <label class="hidden" for="edad2"></label>
                     <input name="edad2" type="number"/>
@@ -118,7 +123,7 @@
                 <label for="hijos-embarazada">No, pero estoy embarazada/mi pareja esta embarazada</label>
                     <input id="hijos-embarazada" name="hijos" type="radio"/>
                 
-                <label for="hijos-cantidad1">De tener hijos, ¿cúantos tiene?</label>
+                <label class="numberfix" for="hijos-cantidad1">De tener hijos, ¿cúantos tiene?</label>
                     <input name="hijos-cantidad1" type="number"/>
                     <label class="hidden" for="hijos-cantidad2"></label>
                     <input name="hijos-cantidad2" type="number"/><br/>
@@ -126,26 +131,28 @@
                 <label for="ciudad-nacimiento">Ciudad de Nacimiento:</label>
                     <input name="ciudad-nacimiento" type="text"/>
 
-                <label for="fecha-nacimiento-dia1">Fecha de Nacimiento:</label>
+                <label class="numberfix" for="fecha-nacimiento-dia1">Fecha de Nacimiento:</label>
                     <input name="fecha-nacimiento-dia1" type="number"/>
                     <label class="hidden" for="fecha-nacimiento-dia2"></label>
-                    <input name="fecha-nacimiento-dia2" type="number"/>
+                    <input class="numberfix" name="fecha-nacimiento-dia2" type="number"/>
 
                     <label class="hidden" for="fecha-nacimiento-mes1"></label>
                     <input name="fecha-nacimiento-mes1" type="number"/>
                     <label class="hidden" for="fecha-nacimiento-mes2"></label>
-                    <input name="fecha-nacimiento-mes2" type="number"/>
+                    <input class="numberfix" name="fecha-nacimiento-mes2" type="number"/>
 
                     <label class="hidden" for="fecha-nacimiento-ano1"></label>
                     <input name="fecha-nacimiento-ano1" type="number"/>
                     <label class="hidden" for="fecha-nacimiento-ano2"></label>
                     <input name="fecha-nacimiento-ano2" type="number"/><br/>
+                    
+                <div id="fecha-nacimiento-notes">
+                    <span class="notes">(Día)</span>
+                    <span class="notes">(Mes)</span>
+                    <span class="notes">(Año)</span><br/>
+                </div>
 
-                <span>(Día)</span>
-                <span>(Mes)</span>
-                <span>(Año)</span>
-
-                <label for="cedula-pasaporte">Cédula / Pasaporte:</label>
+                <label class="numberfix" for="cedula-pasaporte">Cédula / Pasaporte:</label>
                     <input name="cedula-pasaporte" type="number"/>
                 <label for="carrera">Carrera:</label>
                     <input name="carrera" type="text"/><br/>
@@ -181,8 +188,8 @@
 
         <!--2-DATOS ACADÉMICOS:-->
 
-            <span>2-DATOS ACADÉMICOS:</span>
-            <div id="form-datos-academicos">
+            <span class="subtitle">2-DATOS ACADÉMICOS:</span>
+            <div class="parrafo" id="form-datos-academicos">
                 
                 <label for="nivel-tecnico">Nivel: Técnico</label>
                     <input id="nivel-tecnico" name="nivel" type="radio" checked/>
@@ -240,8 +247,8 @@
         
         <!--3-DATOS OCUPACIONALES:-->
 
-            <span>3-DATOS OCUPACIONALES:</span>
-            <div id="form-datos-ocupacionales">
+            <span class="subtitle">3-DATOS OCUPACIONALES:</span>
+            <div class="parrafo" id="form-datos-ocupacionales">
 
                 <label for="empleado-si">¿Está Empleado? Sí</label>
                     <input id="empleado-si" name="empleado" type="radio" checked/>
@@ -276,8 +283,8 @@
 
         <!--4-DATOS DEL TUTOR (A)-->
 
-            <span>4-DATOS DEL TUTOR (A)</span>
-            <div id="form-datos-tutor">
+            <span class="subtitle">4-DATOS DEL TUTOR (A)</span>
+            <div class="parrafo" id="form-datos-tutor">
 
                 <label for="nombre-tutor">Nombre de la Madre, Padre o Tutor:</label>
                     <input name="nombre-tutor" type="text"/><br/>
@@ -321,18 +328,18 @@
                 <label for="direccion-familiar">Dirección Familiar Actual:</label>
                     <input name="direccion-familiar" type="text"/><br/>
 
-                <label for="telefono-familiar">Teléfono:</label>
+                <label class="numberfix" for="telefono-familiar">Teléfono:</label>
                     <input name="telefono-familiar" type="number"/>
 
-                <label for="celular-familiar">Celular:</label>
+                <label class="numberfix" for="celular-familiar">Celular:</label>
                     <input name="celular-familiar" type="number"/><br/>
 
             </div>
         
         <!--5-DATOS DE SALUD:-->
 
-            <span>5-DATOS DE SALUD:</span>
-            <div id="form-datos-salud">
+            <span class="subtitle">5-DATOS DE SALUD:</span>
+            <div class="parrafo" id="form-datos-salud">
                 
                 <label for="enfermedad-si">¿Padece alguna enfermedad? Sí</label>
                     <input id="enfermedad-si" name="enfermedad" type="radio" checked/>
@@ -444,22 +451,22 @@
                 <label for="contactoemergencia-nombre">Contacto en caso de emergencias:</label>
                     <input name="contactoemergencia-nombre" type="text"/>
 
-                <label for="contactoemergencia-telefono">Teléfono:</label>
+                <label class="numberfix" for="contactoemergencia-telefono">Teléfono:</label>
                     <input name="contactoemergencia-telefono" type="number"/><br/>
 
             </div>
         
         <!--COMPROMISO ESTUDIANTIL-->
 
-            <label for="fecha-admision-dia1">Fecha de Admisión:</label>
+            <label class="numberfix" id="fecha-admision-dia1" for="fecha-admision-dia1">Fecha de Admisión:</label>
                 <input name="fecha-admision-dia1" type="number"/>
                 <label class="hidden" for="fecha-admision-dia2"></label>
-                <input name="fecha-admision-dia2" type="number"/>
+                <input class="numberfix" name="fecha-admision-dia2" type="number"/>
 
                 <label class="hidden" for="fecha-admision-mes1"></label>
                 <input name="fecha-admision-mes1" type="number"/>
                 <label class="hidden" for="fecha-admision-mes2"></label>
-                <input name="fecha-admision-mes2" type="number"/>
+                <input class="numberfix" name="fecha-admision-mes2" type="number"/>
 
                 <label class="hidden" for="fecha-admision-ano1"></label>
                 <input name="fecha-admision-ano1" type="number"/>
@@ -479,7 +486,7 @@
             <span>Firma del Solicitante</span>
 
             
-            <div id="form-compromiso">
+            <div class="parrafo" id="form-compromiso">
                 <span>COMPROMISO ESTUDIANTIL</span>
 
                 <p>Como estudiante que desea ingresar y permanecer en la Universidad Tecnológica de Santiago (UTESA) me

@@ -1,0 +1,68 @@
+/*Diseño general del formulario*/
+
+.main-container{ 
+    width: auto ; 
+    margin: 0.5% ;  
+    padding: 1% ;
+    border: 1px solid black ; 
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 1.5vw ;
+    color: black ;
+}
+
+/*Titulo y presentación*/
+
+#logo-universidad{ display: block ; float: right }
+
+.titulo{ font-weight: bold ; text-align: center }
+
+#titulo-principal{ font-size: 1.8vw ; margin-top: 2% }
+
+#subtitulo-principal{ font-size: 1.5vw ; color: #b0b0b0 }
+
+#titulo-departamento{ font-size: 1.5vw }
+
+#titulo-documento{ font-size: 1.5vw }
+
+/*Presentación del formulario*/
+
+input[type=text]{ border-top: none ; border-left: none ; border-right: none ; border-bottom: 2px solid black }
+
+input[type=number]{ width: 3% ; border: 2px solid black ; margin-left: -1% }
+
+input[type=image]{ width: 13.7vw ; height: 13.7vw }
+
+#form-foto{ display: block ; float: left ; border: 3px solid black ; width: 14vw ; height: 14vw }
+
+#form-inicio{ display: block ; margin-top: 0.5% ; text-align: center }
+
+#pensum-inicio1{ margin-left: 5% }
+
+#span-inicio{ margin-left: 10% ; color: #b0b0b0 }
+
+#span-matricula{ margin-left: 8% ; margin-right: 12% ; color: #b0b0b0 }
+
+.clearfix{ clear: both }
+
+/*Secciones del formulario*/
+
+.subtitle{ margin: 1% ; font-weight: bold }
+
+.parrafo{ 
+    margin: 1% ; 
+    padding: 5px ; 
+    color: black ; 
+    text-align: justify ; 
+    font-family: 'PT Sans', sans-serif; 
+    border: 3px solid black ;
+    margin-bottom: 5% ;
+}
+
+.numberfix{ margin-right: 1% }
+
+.notes{ font-size: 1.2vw }
+
+#fecha-nacimiento-notes{ margin-left: 51vw }
+#fecha-nacimiento-notes span{ margin-right: 7% }
+
+#fecha-admision-dia1{ margin-left: 1%  }
